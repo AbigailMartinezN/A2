@@ -1,1 +1,88 @@
-
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Copia de Untitled0.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPz9Q2OlAq4UfTu11wsqOly",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AbigailMartinezN/Act.1/blob/main/IA_Ejercicio1_AbigailMartinez_2077750\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "FvYjZqMticIv",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1cffb8f7-5b77-41ab-d2ff-514f2c896ce9"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Por favor escribe tu nombre: \n",
+            "abi\n",
+            "Mucho gusto abi\n"
+          ]
+        }
+      ],
+      "source": [
+        "#1. Escribe un programa que le pida al usuario por su nombre y que lo salude con su nombre, excepto si se llama “Ana”, “Juan”, y “Pedro”.Abigail Martinez Noriega 2077750 ,N1,N2,N3 Jueves\n",
+        "\n",
+        "nombre = input(\"Por favor escribe tu nombre: \\n\")\n",
+        "if nombre.lower() != \"ana\" and nombre.lower() != \"juan\" and nombre.lower() != \"pedro\":\n",
+        "    print(\"Mucho gusto \" + nombre)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = input(\"Por favor escribe tu nombre: \\n\")\n",
+        "if nombre.lower() != \"ana\" and nombre.lower() != \"juan\" and nombre.lower() != \"pedro\":\n",
+        "    print(\"Mucho gusto \" + nombre)"
+      ],
+      "metadata": {
+        "id": "Ms-bo-b8lSiy",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "98a7fb5f-e824-447d-a8b1-be9213666958"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Por favor escribe tu nombre: \n",
+            "abi\n",
+            "Mucho gusto abi\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
