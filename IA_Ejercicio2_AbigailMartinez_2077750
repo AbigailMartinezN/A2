@@ -1,1 +1,69 @@
-
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPHazyTwM1CVJLbxmN5OXAi",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AbigailMartinezN/Act.1/blob/main/IA_Ejercicio2_AbigailMartinez_2077750\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-b63YtBw1Lpg",
+        "outputId": "7159c6ab-8bc9-4604-e0a3-bae47e27181f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "quinto\n",
+            "['quinto', 'cuarto', 'tercero', 'segundo', 'primero']\n"
+          ]
+        }
+      ],
+      "source": [
+        "#2.Escribe una función que regrese el último elemento de una lista y que revierta el orden de la lista e imprima la lista revertida.Abigail MArtinez Noriega 2077750 N1,N2,N3 Jueves\n",
+        "\n",
+        "lista = ['primero', 'segundo', 'tercero', 'cuarto', 'quinto']\n",
+        "\n",
+        "#se crea funcion para realizar el programa\n",
+        "def ordenNuevo(lista):\n",
+        "    #Se imprime el último valor\n",
+        "    print(lista[-1])\n",
+        "    #se revierte la lista\n",
+        "    lista = lista[::-1]\n",
+        "    #se imprime la lista con el nuevo orden\n",
+        "    print(lista)\n",
+        "\n",
+        "#se llama a la funcion    \n",
+        "ordenNuevo(lista)"
+      ]
+    }
+  ]
+}
