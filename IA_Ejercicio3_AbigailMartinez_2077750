@@ -1,1 +1,92 @@
-
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM2BiQPW1sNPNCzGwvjznHh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AbigailMartinezN/Act.1/blob/main/IA_Ejercicio3_AbigailMartinez_2077750\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JHg4s0CW12tQ",
+        "outputId": "fad4149c-2b17-49bd-ffd7-26e009ebecd8"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "*************\n",
+            "* aquí      *\n",
+            "* defines   *\n",
+            "* cuantas   *\n",
+            "* palabras  *\n",
+            "* quieres   *\n",
+            "*************\n"
+          ]
+        }
+      ],
+      "source": [
+        "#3.Escribe una función que toma una lista de strings y los imprima línea por línea en un marco rectangular. Por ejemplo, la lista [“Hola”, “a”, “todos”, “esto”, “es”, “un”, “marco”] se imprime: Abigail MArtinez Noriega 2077750 N1,N2,N3, Jueves\n",
+        "\n",
+        "#se define la cadena\n",
+        "listaDePalabras = ['aquí', 'defines', 'cuantas', 'palabras', 'quieres']\n",
+        "\n",
+        "#se crea funcion que hace el proceso\n",
+        "def rectangulo(lista):\n",
+        "    totalLetras = 0\n",
+        "\t\n",
+        "\t#se cuenta el total de letras por palabra, para buscar el maximo\n",
+        "    for i in lista: \n",
+        "        if len(i) > totalLetras:\n",
+        "            totalLetras = len(i)\n",
+        "\t\t\t\n",
+        "\t#se le suma al maximo de letras un numero mayor a 1 para poder hacer el rectangulo espaciado\n",
+        "    agregaEspaciosEnBlanco = totalLetras + 2\n",
+        "    \n",
+        "    #variable para saber cuantos asteriscos van a abrir y cerrar la impresion\n",
+        "    totalAsteriscosAbreYCierre = len(\"* \" + lista[0].ljust(agregaEspaciosEnBlanco) + \"*\")\n",
+        "    asterisco = \"*\" * totalAsteriscosAbreYCierre\n",
+        "\t\n",
+        "\t#print de apertura\n",
+        "    print(asterisco) \n",
+        "\t\n",
+        "    #se muestra la cadena con los espacios necesarios para formar el rectangulo\n",
+        "    for i in lista:\n",
+        "        print(\"* \" + i.ljust(agregaEspaciosEnBlanco) + \"*\")\n",
+        "\t\t\n",
+        "\t#print de cierre\n",
+        "    print(asterisco)\n",
+        "    \n",
+        "#llamada de funcion con la lista de palabras\n",
+        "rectangulo(listaDePalabras)    "
+      ]
+    }
+  ]
+}
